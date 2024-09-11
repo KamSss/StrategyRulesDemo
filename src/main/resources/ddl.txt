@@ -1,0 +1,23 @@
+-- 可重复执行DDL
+TRUNCATE TABLE sampleData
+-- 创建数据库表 sampleData
+CREATE TABLE sampleData (
+    -- 抽样人员 (Sampling personnel)
+    sampling_personnel VARCHAR(255),
+    -- 抽样时间 (Sampling time)
+    sampling_time DATETIME,
+    -- 被抽样单位名称 (Sampled unit name)
+    sampled_unit_name VARCHAR(255),
+    -- 抽样类型 (Sampling type)
+    sampling_type VARCHAR(255),
+    -- 抽样编号 (Sampling number) - 主键
+    sampling_number VARCHAR(255) PRIMARY KEY,
+    -- 抽样数量 (Sampling quantity)
+    sampling_quantity INT,
+    -- 抽样场所 (Sampling location)
+    sampling_location VARCHAR(255),
+    -- 被抽样单位地址 (Sampled unit address)
+    sampled_unit_address VARCHAR(255),
+    -- 被抽样单位市 (Sampled unit city)
+    sampled_unit_city VARCHAR(255)
+);
